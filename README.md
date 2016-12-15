@@ -23,5 +23,7 @@ To install the dependencies, in a terminal window, type :
 npm install
 bower install
 
+In gulpfile.js, don't forget to change the proxy/server address in the browsersync task to open the project in your browser!
+
 Repo owner and admin : _rj (jul.rondeau@gmail.com)
 
