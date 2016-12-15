@@ -1,0 +1,19 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the footer of the site/application.
+// -----------------------------------------------------------------------------
+
+.site-footer {
+  @include full();
+  background: $color__bg-footer; 
+  text-align: center;
+  padding: 1% 0;
+  
+  .sidebar-footer {
+    
+  } /// .sidebar-footer
+  
+  
+
+}
+
+

@@ -1,0 +1,7 @@
+/*
+* Custom back office styles
+*/
+
+#adminmenu .wp-menu-image img {
+  padding: 0;
+}

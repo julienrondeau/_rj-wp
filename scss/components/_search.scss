@@ -1,0 +1,150 @@
+/*
+  Styles ofr the Search Form in the header
+*/
+
+
+.searchbox {
+  @include center(xy);
+  background: $blue;
+  position: absolute;
+  right: 24.046875px;
+  width: 0;
+  min-width: 35px;
+  height: 35px;
+  overflow: hidden;
+  transition: width 0.3s ease;
+  -webkit-backface-visibility: hidden;
+  
+  @include mappy-bp(medium) {
+    right: 100px;
+  }
+  
+}
+
+.search-input {
+  position: absolute;
+  top: 0;
+  right: 0;
+  border: 0;
+  outline: none;
+  background: transparent;
+  width: 90%;
+  height: 25px;
+  margin: 0;
+  padding: 5px 10px;
+  font-family: inherit;
+  font-size: inherit;
+  color: transparent;
+  
+  @include placeholder {
+    @include px-size(11px);
+    font-weight: 700;
+    color: transparent;
+    text-transform: uppercase;
+    
+  }
+}
+
+input[type="search"] .search-input {
+  -webkit-appearance: none;
+  border-radius: 0;
+}
+
+.icon-search,
+.search-submit {
+  width: 25px;
+  height: 25px;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 5px;
+  padding: 0;
+  margin: 0;
+  line-height: 25px;
+  text-align: center;
+  cursor: pointer;
+  color: $white;
+}
+
+.search-submit {
+  @include background-opacity($white, 0);
+  @include sprite($search);
+  color: transparent;
+  border: 0;
+  outline: none;
+  
+  @include on-event() {
+    opacity: 1;
+  }
+}
+
+.icon-search {
+  @include font-smoothing();
+  @include sprite($search);
+  color: $color__text-search;
+  background: transparent;
+  font-size: inherit;
+  font-family: $font__main;
+  speak: none;
+  font-style: normal;
+  font-weight: 400;
+  font-variant: normal;
+  text-transform: none;
+  opacity: 0.7;
+  transition: opacity 0.3s ease;
+  z-index: 1;
+/*  
+  &:before {
+    @include sprite($search);
+    content: '';
+    display: block;
+  }
+  */
+  @include on-event() {
+    opacity: 1;
+  }
+}
+
+.searchbox-open,
+.no-js .searchbox {
+  width: 54%;
+  border: none;
+  border-bottom: 1px solid $white-light;
+  transition: width 0.3s ease;
+  
+  @include mappy-bp(small) { /// .searchbox-open
+    width: 25%;
+  }
+  
+  @include mappy-bp(large) { /// .searchbox-open
+    width: 15%;
+  }
+
+ .search-input {
+   color: $color__text-search;
+   
+   @include placeholder {
+     color: $color__text-input;
+     padding-top: 5px;
+   }
+ }
+ 
+}/// .searchbox-open
+
+/*.search.search-open .search-input,
+.no-js .search .search-input {
+  @include placeholder {
+    color: $color__text-input;
+  }
+}
+
+.search.search-open .icon-search,
+.no-js .search .icon-search {
+  opacity: 1;
+  z-index: 11;
+}
+
+.search.search-open .search-submit,
+.no-js .search .search-submit {
+  z-index: 90;
+}*/

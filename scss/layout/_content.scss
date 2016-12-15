@@ -1,0 +1,35 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the content of the site/application.
+// -----------------------------------------------------------------------------
+
+.site-main {
+  @include clearfix();
+  @include container();
+  margin: 0 em(20px); 
+  
+  @include mappy-bp(medium) {
+    margin: 0 auto;
+  }
+}
+
+#primary {
+  
+  @include mappy-bp(medium) {
+    @include span(8 of 12);
+    padding: 1% 5%;
+  }
+  
+  &.full-width {
+    @include full();
+  }
+}
+
+#secondary {
+  margin-top: em(20px);
+  
+  @include mappy-bp(medium) {
+    @include span(last 4 of 12);
+    padding: 1% 5%;
+    margin-top: 0;
+  }
+}

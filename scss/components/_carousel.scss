@@ -1,0 +1,19 @@
+
+//  Created on : 29 mars 2016, 14:37:05
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the footer carousel
+// -----------------------------------------------------------------------------
+
+
+.owl-carousel {
+  
+  .owl-stage {
+    //display: table;
+  }
+  
+  .owl-item {
+    float: none;
+    display: table-cell;
+    vertical-align: middle;
+  }
+}

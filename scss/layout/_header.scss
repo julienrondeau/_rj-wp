@@ -1,0 +1,32 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the header of the site/application.
+// -----------------------------------------------------------------------------
+
+
+.site-header {
+  background: $color__bg-header;
+  height: $height__header;
+  position: fixed;
+  z-index: 10;
+  right: 0;
+  left: 0;
+  top: 0;
+}
+
+.site-branding {
+  display: inline-block;
+  
+  a {
+    color: $black;
+  }
+  img {
+    @include center(y);
+    position: absolute;
+    left: 20px;
+  }
+ 
+}
+
+.site-title {
+  @include screen-reader;
+}

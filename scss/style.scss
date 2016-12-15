@@ -1,0 +1,64 @@
+/*!
+Theme Name: _rj
+Theme URI: http://underscores.me/
+Author: julien rondeau
+Author URI: http://www.julienrondeau.fr
+Description: Description
+Version: 1.5.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: _rj
+Tags: responsive-layout, sass, gulp, susy, breakpoint, wordpress
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+
+_rj is based on Underscores http://underscores.me/, (C) 2012-2015 Automattic, Inc.
+Underscores is distributed under the terms of the GNU GPL v2 or later.
+
+_rj is structured with SASS (http://sass-lang.com/) with a 7-1 architecture, is using Susy (http://susy.oddbird.net/) as grid system, Breakpoint (https://github.com/at-import/breakpoint) to manage the media queries and Gulp (http://gulpjs.com/) to automate the workflow.
+
+Normalizing styles have been helped along thanks to the fine work of
+Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
+*/
+
+
+
+@charset 'UTF-8';
+
+// 1. Vendors
+@import 'bower_components/susy/sass/susy';
+@import 'bower_components/mappy-breakpoints/mappy-breakpoints';
+@import 'vendor/normalize';
+@import 'vendor/owl-carousel';
+
+// 2. Configuration and helpers
+@import
+'base/variables',
+'utils/functions',
+'utils/mixins',
+'utils/helpers',
+'base/sprites',
+'layout/layout';
+
+// 3. Base stuff
+@import
+'base/base',
+'base/fonts',
+'base/typography',
+'base/headings';
+
+// 4. Components
+@import 'components/components';
+
+// 5. Page-specific styles
+@import 'pages/pages';
+
+// 6. Themes
+@import 'themes/default';
+
+// 7. Print
+@import 'utils/print';
+
+// 8. Shame
+@import 'shame';

@@ -1,0 +1,99 @@
+// -----------------------------------------------------------------------------
+// This file contains all application-wide Sass variables.
+// -----------------------------------------------------------------------------
+
+/// Regular font family
+/// @type List
+$base-font-size                      : 16px;
+$base__line-height                    : 1.4;
+
+$font__main                           : 'Roboto', sans-serif !default;
+$font__code                           : Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+$font__pre                            : "Courier 10 Pitch", Courier, monospace;
+$font__line-height-pre                : 1.6;
+
+/// Colors
+/// @type Color
+
+$white                                : #fff;
+$white-light                          : rgba(255, 255, 255, 0.9);
+$black                                : #000;
+$black-medium                         : rgba(0, 0, 0, 0.9);
+$black-light                          : rgba(0, 0, 0, 0.6);
+$black-xlight                         : rgba(0, 0, 0, 0.2);
+$blue                                 : rgb(20, 66, 89);
+$blue-medium                          : rgb(25, 78, 102);
+$blue-light                           : rgb(228, 237, 242);
+$grey                                 : #ccc;
+$red                                  : rgb(206, 16, 54);
+
+
+
+/// Dimensions
+$height__header                       : 100px !default;
+$width__logo                          : 207px !default;
+
+/// Mobile Navigation trigger
+$color__bg-nav-trigger                 : $black !default;
+$width__nav-trigger                   : 32px !default;
+$height__nav-trigger                  : 32px !default;
+$width__hamburger                     : 16px !default;
+$height__hamburger                    : 3px !default;
+$color__hamburger                     : $white !default;
+$color__hamburger-open                : $black !default;
+
+
+
+$color__bg-body                       : $white !default;
+$color__bg-header                     : $white !default;
+$color__bg-footer                     : $white !default;
+$color__bg-navigation                 : $white !default;
+
+
+$color__bg-pre                        : $blue !default;
+$color__bg-ins                        : $blue !default;
+$color__bg-hr                         : $blue !default;
+$color__bg-screen                     : $white !default;
+
+
+$color__text-main                     : $black-medium !default;
+$color__text-screen                   : $blue !default;
+$color__text-input                    : $white-light !default;
+$color__text-search                   : $white !default;
+
+$color__link                          : $black !default;
+$color__link-menu                     : $black !default;
+
+
+$color__border-abbr                   : $black !default;
+
+/// Inputs
+$input__color-border                  : $grey !default;
+$input__color-text                    : $black !default;
+$input__color-placeholder             : $black !default;
+
+/// Buttons
+$button__color-bg                     : $grey !default;
+$button__color-text                   : $white !default;
+$button__border                       : $grey !default;
+$button__border-hover                 : $grey !default;
+$button__border-focus                 : $grey !default;
+
+
+$color__box-shadow                    : rgba(0, 0, 0, 0.26) !default;
+
+///transition variables
+$timing                               : 0.3s !default;
+$curve                                : ease !default;
+
+/// Breakpoints map
+/// @requires mappy-breakpoints
+/// https://github.com/zellwk/mappy-breakpoints
+
+$breakpoints: (
+  xsmall                             : 320px,
+  small                              : 568px,
+  medium                             : 768px,
+  large                              : 1024px,
+  xlarge                             : 1200px
+)

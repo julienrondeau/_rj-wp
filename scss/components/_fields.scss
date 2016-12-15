@@ -1,0 +1,30 @@
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="tel"],
+input[type="password"],
+textarea {
+  color: $input__color-text;
+  border: 1px solid $input__color-border;
+  border-radius: 0;
+  height: 35px;
+  width: 100%;
+  padding: 3px;
+
+  &:focus {
+    outline: none;
+  }
+  
+  @include placeholder() {
+    color: $input__color-placeholder;
+  }
+}
+
+
+label {
+  width: 20%;
+  font-style: italic;
+  display: inline-block;
+}
+
+

@@ -1,0 +1,31 @@
+/// GRID MAP
+/// @requires susy
+/// settings infos : http://susydocs.oddbird.net/en/latest/settings/
+
+$susy: (
+  output: float, // float | isolate
+  math: fluid, // fluid | static (requires column-width)
+  column-width: false, // false | value
+  container: 1180px,
+  container-position: center, // left | center | right | <length> [*2] (grid padding)
+  last-flow: to,
+  columns: 12,
+  gutters: 0.45, //.25
+  gutter-position: after,  // before | after | split | inside | inside-static (requires column-width)
+  global-box-sizing: border-box, // content-box | border-box (affects inside/inside-static)
+ debug: (
+      image: hide,
+      color: rgba(#66f, 0.25),
+      output: overlay, // background | overlay
+      toggle: top right,
+  ),
+  use-custom: (
+      background-image: true, // look for background-image mixin
+      background-options: false, // look for background-size, -origin and -clip and other compass/bourbon mixins
+      box-sizing: true, // look for custom bix sizing mixin
+      clearfix: false, // true = look for internal clearfix before using micro clearfix
+      rem: true, // look for rem mixin
+  )
+);
+
+

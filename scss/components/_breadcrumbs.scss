@@ -1,0 +1,38 @@
+/*
+* Partial for the Breadcrumb
+*/
+
+$font-breadcrumb: (
+null: rem(12px),
+medium: rem(16px)
+);
+
+.breadcrumbs {
+  @include font-size($font-breadcrumb);
+  margin-top: 15px;
+  margin-left: 5%;
+  margin-right: 5%;
+  font-weight: 400;
+
+  a {
+    text-decoration: none;
+    color: $blue;
+    font-weight: 400;
+  }
+
+  span:nth-of-type(2),
+  span:nth-of-type(3) {
+    font-weight: 700;
+  }
+
+  @include mappy-bp(medium) {
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 30px;
+  }
+
+  @include mappy-bp(xlarge) {  
+    margin-top: 50px;
+  }
+    
+}

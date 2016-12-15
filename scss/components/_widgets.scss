@@ -1,0 +1,31 @@
+.widget {
+  margin: 0;
+
+  select {
+    max-width: 100%;
+  }
+  
+}
+
+.widget-title {
+  @include px-size(14px);
+  font-weight: 700;
+  color: $white-light;
+  margin-bottom: 5px;
+  
+  @include when-inside('fieldset') {
+    @include px-size(16px);
+    color: $black-light;
+    font-weight: 400;
+  }
+}
+
+/* Search widget. */
+.widget_search {
+  
+  .search-submit {
+    display: none;
+  }
+  
+}
+

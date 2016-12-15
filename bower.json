@@ -1,0 +1,23 @@
+{
+  "name": "_rj-wordpress",
+  "description": "My own personnal wordpress install",
+  "main": "index.php",
+  "authors": [
+    "jul.rondeau@gmail.com"
+  ],
+  "license": "ISC",
+  "moduleType": [],
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "susy": "~2.2.12",
+    "mappy-breakpoints": "^0.2.3"
+  }
+}

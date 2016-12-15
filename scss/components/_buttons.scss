@@ -1,0 +1,17 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the button component.
+// -----------------------------------------------------------------------------
+button,
+input[type="button"],
+input[type="reset"] {
+  @include btn($button__color-bg, $button__color-text);
+  text-transform: uppercase;
+  font-weight: 800;
+  line-height: 1;
+  border: 0;
+  padding: 0;
+  width: 125px;
+  height: 30px;
+  text-align: center;
+}
+

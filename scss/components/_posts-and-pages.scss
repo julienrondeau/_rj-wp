@@ -1,0 +1,76 @@
+.sticky {
+  display: block;
+}
+
+.byline,
+.updated:not(.published) {
+  display: none;
+}
+
+.single .byline,
+.group-blog .byline {
+  display: inline;
+}
+
+.page-content,
+.entry-content,
+.entry-summary {
+  margin: 0;
+}
+
+.page-links {
+  clear: both;
+  margin: 0 0 1.5em;
+}
+
+.entry-meta {
+
+}
+
+fieldset {
+  width: 50%;
+  margin: 0 auto;
+  
+  legend {
+    text-align: center;
+  }
+  
+  label {
+    width: 80%;
+  }
+}
+
+
+.single {
+  
+  .site-main {
+        padding: 0 5%;
+  }
+ 
+   /* not displaying ajax navigation on single post */
+  .ias-trigger {
+    display: none!important;
+  }
+  
+  iframe {
+    width: 100%;
+  }
+  
+  .all-posts-link {
+    padding: 5px 15px;
+    text-align: center;
+    background: $blue-light;
+    margin-top: 10px;
+    
+    a {
+      color: $black-light;
+      text-transform: uppercase;
+      
+      @include on-event() {
+        color: $blue;
+      }
+    }
+    
+  }
+  
+}

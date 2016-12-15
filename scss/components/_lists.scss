@@ -1,0 +1,36 @@
+ul,
+ol,
+li {
+  @include reset-list;
+}
+
+ul {
+  list-style: none;
+}
+
+ol {
+  list-style: decimal;
+}
+
+li {
+  position: relative;
+}
+
+li > ul,
+li > ol {
+  margin-bottom: 0;
+  margin-left: 1.5em;
+}
+
+dt {
+  font-weight: bold;
+}
+
+dd {
+  margin: 0 1.5em 1.5em;
+}
+
+.site-main ol, 
+.site-main ul ul {
+  margin-bottom: 0;
+}
