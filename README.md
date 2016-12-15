@@ -23,5 +23,5 @@ To install the dependencies, in a terminal window, type :
 npm install
 bower install
 
-Repo owner and admin : _rj (JulienRondeau)
+Repo owner and admin : _rj (jul.rondeau@gmail.com)
 
