@@ -77,12 +77,12 @@ jQuery(document).ready(function($) {
 
   /************* Sticky footer  *****************/
 
-  var windowHeight = $(window).height(),
-      bodyHeight = $('body').height();
-
-  if (bodyHeight < windowHeight) {
-    $('.site-footer').toggleClass('sticky-footer');
-  }
+//  var windowHeight = $(window).height(),
+//      bodyHeight = $('body').height();
+//
+//  if (bodyHeight < windowHeight) {
+//    $('.site-footer').toggleClass('sticky-footer');
+//  }
 
 
   /************* Infinite Ajax Scroll init *****************/

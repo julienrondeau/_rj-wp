@@ -274,8 +274,8 @@ function _rj_scripts() {
 	wp_enqueue_style( 'font-awesome', '//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"', array(), null );
     
     // Register Jquery the right way!
-    wp_deregister_script('jquery');
-    wp_enqueue_script( 'jquery', '//code.jquery.com/jquery-1.12.2.min.js',  array(),'', true );
+//    wp_deregister_script('jquery');
+//    wp_enqueue_script( 'jquery', '//code.jquery.com/jquery-1.12.2.min.js',  array(),'', true );
     wp_enqueue_script( 'jquery-migrate', '//code.jquery.com/jquery-migrate-1.4.0.min.js',  array(),'', true );
 
 	// modernizr (without media query polyfill)
@@ -288,7 +288,7 @@ function _rj_scripts() {
     //wp_enqueue_script( 'infinite-ajax-scroll', get_template_directory_uri() . '/js/jquery-ias.min.js', array('jquery'), '', true );
 	
     // Owl Carousel
-    //wp_enqueue_script( 'owl-carousel', get_template_directory_uri() . '/js/owl.carousel.min.js', array('jquery'), '', true );
+    wp_enqueue_script( 'owl-carousel', get_template_directory_uri() . '/js/owl.carousel.min.js', array('jquery'), '', true );
 	
 	// jquery TouchSwipe
 	//wp_enqueue_script( 'TouchSwipe',  get_template_directory_uri() . '/js/jquery.touchSwipe.min.js', array('jquery'), '1.6', true );

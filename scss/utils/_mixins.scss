@@ -264,8 +264,8 @@
 
 // TRANSITION MIXIN
 
-@mixin transition($property: all) {
-  transition: $property $timing $curve;
+@mixin transition($property: all, $time: $timing) {
+  transition: $property $time $curve;
 }
 
 //BOX-SHADOW MIXIN
