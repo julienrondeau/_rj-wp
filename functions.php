@@ -230,7 +230,7 @@ function _rj_fonts_url() {
 	 * by Noto Sans, translate this to 'off'. Do not translate into your own language.
 	 */
 	if ( 'off' !== _x( 'on', 'Roboto font: on or off', '_rj' ) ) {
-		$fonts[] = 'Roboto:300,400,500,700,800';
+		$fonts[] = 'Roboto:400,700';
 	}
 
 	/*
@@ -274,21 +274,21 @@ function _rj_scripts() {
 	wp_enqueue_style( 'font-awesome', '//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"', array(), null );
     
     // Register Jquery the right way!
-//    wp_deregister_script('jquery');
-//    wp_enqueue_script( 'jquery', '//code.jquery.com/jquery-1.12.2.min.js',  array(),'', true );
+    wp_deregister_script('jquery');
+    wp_enqueue_script( 'jquery', '//code.jquery.com/jquery-1.12.2.min.js', array(), '', true );
     wp_enqueue_script( 'jquery-migrate', '//code.jquery.com/jquery-migrate-1.4.0.min.js',  array(),'', true );
 
 	// modernizr (without media query polyfill)
 	wp_enqueue_script( '_rj-modernizr', '//cdnjs.cloudflare.com/ajax/libs/modernizr/2.7.1/modernizr.min.js', false, null );
 	
-    //Jquery-easing
-    //wp_enqueue_script( '_rj-jquery.easing.1.3', get_template_directory_uri() . '/js/jquery.easing.1.3.js', array('jquery'), '1.3', true );
-    
-    //Infinite Ajax scroll
-    //wp_enqueue_script( 'infinite-ajax-scroll', get_template_directory_uri() . '/js/jquery-ias.min.js', array('jquery'), '', true );
-	
-    // Owl Carousel
-    wp_enqueue_script( 'owl-carousel', get_template_directory_uri() . '/js/owl.carousel.min.js', array('jquery'), '', true );
+        //Jquery-easing
+        //wp_enqueue_script( '_rj-jquery.easing.1.3', get_template_directory_uri() . '/js/jquery.easing.1.3.js', array('jquery'), '1.3', true );
+
+        //Infinite Ajax scroll
+        //wp_enqueue_script( 'infinite-ajax-scroll', get_template_directory_uri() . '/js/jquery-ias.min.js', array('jquery'), '', true );
+
+        // Owl Carousel
+//    wp_enqueue_script( 'owl-carousel', get_template_directory_uri() . '/js/owl.carousel.min.js', array('jquery'), '', true );
 	
 	// jquery TouchSwipe
 	//wp_enqueue_script( 'TouchSwipe',  get_template_directory_uri() . '/js/jquery.touchSwipe.min.js', array('jquery'), '1.6', true );

@@ -6,14 +6,14 @@ jQuery(document).ready(function($) {
   $('.nav-trigger').on('click', function(event) {
     event.preventDefault();
     $('body').toggleClass('nav-open');
-    $('.navigation__menu').toggleClass('menu-open');
+    $('.main-navigation').toggleClass('menu-open');
   });
 
   /************* Closes the Responsive Menu on Menu Item Click *****************/
 
-  $('.navigation__menu a').click(function() {
+  $('.main-navigation a').click(function() {
 
-    if ($('.navigation__menu').hasClass('menu-open')) {
+    if ($('.main-navigation').hasClass('menu-open')) {
       $('.nav-trigger').click();
     }
 
