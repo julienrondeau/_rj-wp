@@ -27,31 +27,31 @@
 
 <body <?php body_class(); ?>>
 
-	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', '_rj' ); ?></a>
+    <a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', '_rj' ); ?></a>
 
-	<header id="masthead" class="site-header" role="banner">
-      
-      <a href="#navigation" class="nav-trigger" aria-controls="primary-menu" aria-expanded="false">
-        Menu <span class="hamburger"></span>
-      </a> <!-- .nav-trigger /Hamburger menu -->
-       
-      <div class="site-branding">
-        <div class="site-title"><?php bloginfo( 'name' ); ?></div>
+    <header id="masthead" class="site-header" role="banner">
+        <div class="header-container">
+            <a href="#navigation" class="nav-trigger" aria-controls="primary-menu" aria-expanded="false">
+              Menu <span class="hamburger"></span>
+            </a> <!-- .nav-trigger /Hamburger menu -->
 
-        <?php _rj_the_custom_logo() ?>
+            <div class="site-branding">
+              <div class="site-title"><?php bloginfo( 'name' ); ?></div>
 
-      </div><!-- .site-branding -->
-      
-      <nav id="site-navigation" class="main-navigation" role="navigation">
-          <?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
-      </nav><!-- #site-navigation -->
-      
-      
-      <!-- Expandable search form -->
+              <?php _rj_the_custom_logo() ?>
 
-      <?php //include('inc/expandable-searchForm.php'); ?>
+            </div><!-- .site-branding -->
 
-	</header><!-- #masthead -->
+            <nav id="site-navigation" class="main-navigation" role="navigation">
+                <?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
+            </nav><!-- #site-navigation -->
+
+
+            <!-- Expandable search form -->
+
+            <?php //include('inc/expandable-searchForm.php'); ?>
+        </div>
+    </header><!-- #masthead -->
 
       
 	  
